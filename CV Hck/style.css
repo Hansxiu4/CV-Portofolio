@@ -1,0 +1,78 @@
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(180deg, #0b0c10, #1f2833);
+            color: #66fcf1;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(18, 18, 18, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(102, 252, 241, 0.7);
+            position: relative;
+            overflow: hidden;
+        }
+        h1, h2 {
+            color: #ff2e63;
+            text-shadow: 0 0 10px #ff2e63;
+            margin: 10px 0;
+        }
+        .header img {
+            width: 150px;
+            border-radius: 75px;
+            margin-bottom: 10px;
+            border: 2px solid #ff2e63;
+        }
+        .section {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skill, .project {
+            background: #0B0C10;
+            border: 1px solid #66fcf1;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 15px;
+            flex: 1 1 calc(30% - 10px);
+            transition: transform 0.3s, background 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(102, 252, 241, 0.5);
+        }
+        .skill:hover, .project:hover {
+            transform: translateY(-5px);
+            background: #66fcf1;
+            color: #0B0C10;
+            box-shadow: 0 0 20px rgba(102, 252, 241, 1);
+        }
+        @media (max-width: 600px) {
+            .skill, .project {
+                flex: 1 1 100%;
+            }
+        }
+        marquee {
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        #typing-effect {
+            color: #ffcc00;
+            text-shadow: 0 0 5px red;
+            font-size: 1.5em;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #ffffff;
+        }
